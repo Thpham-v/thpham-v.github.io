@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./style.css">
+
+	<!-- Link GoogleFonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+	<title>Site Portfolio - Thibault Pham-Van</title>
+</head>
+
+<body>
+	<nav>
+		<span class="material-symbols-outlined">account_circle</span>
+		<h1>Thibault Pham-Van<h1>
+		<ul>
+			<li>
+				<a href="mailto:thpham-v@student.42.fr">thpham-v@student.42.fr
+				<span class="material-symbols-outlined">mail</span>
+				</a>
+			</li>
+			<li id="dark-light-mode" onclick="changeDarkmode()">Dark mode</li>
+		</ul>
+	</nav>
+
+	<header>
+		<div class="header-left">
+			<small>
+				<span class="material-symbols-outlined">
+					home_pin
+				</span>
+				5 hameau des marronniers, Lognes - 77185
+			</small>
+			<h1>Bonjour, je suis Thibault Pham-Van. 
+				Voici un portfolio de mes projets.</h1>
+			<p>Étudiant à 42 Paris</p>
+			<div class="links"> 
+				<a href="https://github.com/Thpham-v/">Github
+					<span class="material-symbols-outlined">
+						link
+					</span>
+				</a>
+				<a href="https://www.linkedin.com/in/thibault-pham-van-6363b6253">Linkedin
+					<span class="material-symbols-outlined">
+						link
+					</span>
+				</a>
+				<a href="./srcs/CV thib 2023.pdf">Curriculum
+					<span class="material-symbols-outlined">
+						link
+					</span>
+				</a>
+			</div>
+		</div>
+
+		<div class="header-right">
+			<img src="./srcs/thpham-v-ok.jpeg" alt="profile-photo">
+		</div>
+	</header>
+
+	<section class="about">
+		<h4>À propos de moi</h4>
+		<p>Actuellement étudiant à l'école 42 à Paris, je suis sur le point de terminer le tronc commun de ma formation d'Architecte en Technologies du Numérique.<br>
+			Je me sens prêt à entrer dans le monde professionnel en tant que développeur web, car j'ai développé des compétences solides en C / C++ / front-end, avec également quelques notions en back-end.<br>
+			Ma passion pour le développement web se concentre principalement sur le côté front-end, où je peux créer des expériences utilisateur intuitives et esthétiquement plaisantes pour les utilisateurs.<br>
+			Je suis impatient de mettre mes connaissances en pratique et de continuer à apprendre et à grandir en tant que développeur web professionnel.</p>
+	</section>
+
+	<section class="images">
+		<h1>Liste non-exhaustive de projets</h1>
+		<div class="image-card">
+			<div class="image-left">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/42_Logo.svg/langfr-560px-42_Logo.svg.png" alt="42-paris">
+			</div>
+			<div class="image-right">
+				<h1>Cub3d</h1>
+				<p>Au cours de ce projet, nous avons du développer un jeu en 3D en utilisant les fonctionnalités de la bibliothèque miniLibX, notamment les fonctions de dessin de lignes, de tracé de formes géométriques et de gestion de la mémoire.<br>
+					Il est également nécessaire de mettre en place des algorithmes pour gérer les mouvements et les interactions du joueur avec l'environnement et donc de comprendre le fonctionnement du raycasting.
+				</p>
+			</div>
+		</div>
+
+		<div class="image-card">
+			<div class="image-left">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/42_Logo.svg/langfr-560px-42_Logo.svg.png" alt="42-paris">
+			</div>
+			<div class="image-right">
+				<h1>Philosophers</h1>
+				<p>Philosophers est un projet de développement de programme qui a pour objectif de simuler l'exécution concurrente d'un groupe de philosophes. Les philosophes passent leur temps à réfléchir et à manger à une table avec des couverts.<br>
+					Le but du projet est de gérer la synchronisation entre les philosophes (gestion de multi threads) pour éviter les conflits d'accès aux ressources (couverts) et éviter les problèmes tels que les décès de faim et la boucle d'attente. 
+				</p>
+			</div>
+		</div>
+
+		<div class="image-card">
+			<div class="image-left">
+				<img src="./srcs/calculatrice.png" alt="img-calculette">
+			</div>
+			<div class="image-right">
+				<h1>Calculatrice</h1>
+				<p>Tout est dans le titre, une calculatrice tout ce qu'il y a de plus banale. Projet très simple mais efficace pour ce former sur javascript, html, css.</p>
+			</div>
+		</div>	
+	</section>
+
+	<footer>
+		<h3>Thibault Pham-Van</h3>
+		<p>&copy;thpham-v 2023</p>
+	</footer>
+
+</body>
+<script src="./script.js"></script>
+</html>
