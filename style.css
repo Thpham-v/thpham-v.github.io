@@ -149,15 +149,50 @@ footer p {
 	font-size: 15px;
 }
 
-@media screen and (max-width: 880px) {
+@media all and (max-width: 880px) {
 	.images .image-card {
 		flex-wrap: wrap;
 	}
+	nav {
+		flex-direction: column;
+	}
+	nav ul li {
+		display: flex;
+		align-items: center;
+		left: auto;
+	}
+	nav ul li a span {
+		display: flex;
+		align-items: center;
+		left: auto;
+	}
+	header div a {
+		display: flex;
+		align-items: center;
+
+	}
 }
 
-@media screen and (max-width: 621px) {
+@media all and (max-width: 621px) {
+	nav {
+		flex-direction: column;
+	}
+	nav ul li {
+		display: flex;
+		align-items: center;
+		left: auto;
+	}
+	nav ul li a span {
+		display: flex;
+		align-items: center;
+		left: auto;
+	}
 	header {
 		flex-direction: column-reverse;
+	}
+	header div a {
+		display: flex;
+		align-items: center;
 	}
 	header .header-left {
 		margin-right: 0;
