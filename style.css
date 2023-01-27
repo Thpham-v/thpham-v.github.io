@@ -141,6 +141,19 @@ header .header-right img {
 	width: 330px;
 }
 
+.images .image-card .image-right a {
+	text-decoration: none;
+	cursor: pointer;
+	color: inherit;
+}
+
+.images .image-card .image-right a h1 span {
+	position: absolute;
+	margin-left: 5px;
+	margin-top: 3px;
+	color: dodgerblue;
+}
+
 footer {
 	margin-top: 100px;
 }
@@ -177,15 +190,16 @@ footer p {
 	nav {
 		flex-direction: column;
 	}
+	nav div span {
+		
+	}
 	nav ul li {
 		display: flex;
-		align-items: center;
-		left: auto;
+		align-items: center;	
 	}
 	nav ul li a span {
 		display: flex;
 		align-items: center;
-		left: auto;
 	}
 	header {
 		flex-direction: column-reverse;
@@ -203,6 +217,7 @@ footer p {
 	header .header-right img {
 		width: 250px;
 	}
+
 	.images .image-card .image-left img {
 		width: 100%;
 	}
