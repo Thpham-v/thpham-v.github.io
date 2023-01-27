@@ -190,9 +190,6 @@ footer p {
 	nav {
 		flex-direction: column;
 	}
-	nav div span {
-		
-	}
 	nav ul li {
 		display: flex;
 		align-items: center;	
