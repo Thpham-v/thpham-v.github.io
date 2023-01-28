@@ -14,17 +14,18 @@ body {
 	background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
 }
 
-body a {
-	position: absolute;
-	margin-bottom: 50%;
+body nav {
+	position: fixed;
+	top: 0;
+ 	padding: 50px;
+	transform: scale(1.5);
+}
+
+body nav a {
 	border-bottom: 3px solid black;
 	cursor: pointer;
 	text-decoration: none;
 	color: inherit;
-}
-
-body a nav {
-	size: 20px;
 }
 
 .calculatrice {
@@ -83,12 +84,4 @@ button[data-key="13"] {
 	font-weight: bold;
 	color: white;
 	font-size: 35px;
-}
-
-@media all and (max-width: 880px) {
-	body a {
-		position: relative;
-		margin: 1%;
-		margin-bottom: 500px;
-	}
 }

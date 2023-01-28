@@ -24,11 +24,12 @@ nav {
 }
 
 nav h1 {
-	margin-left: 30px;
+	margin-left: 10px;
 }
 
-nav span {
-	position: absolute;
+nav div {
+	display: flex;
+	align-items: center;
 }
 
 nav ul {
@@ -97,9 +98,8 @@ header .header-left .links a {
 }
 
 header .header-left .links a span {
-	position: absolute;
-	top: -3px;
-	right: -28px;
+	position: relative;
+	bottom: -6px;
 	color: dodgerblue;
 }
 
@@ -162,27 +162,27 @@ footer p {
 	font-size: 15px;
 }
 
-@media all and (max-width: 880px) {
+@media all and (max-width: 1120px) {
 	.images .image-card {
 		flex-wrap: wrap;
 	}
 	nav {
 		flex-direction: column;
 	}
-	nav ul li {
-		display: flex;
-		align-items: center;
-		left: auto;
+	nav div {
+		flex-direction: column;
 	}
-	nav ul li a span {
-		display: flex;
-		align-items: center;
-		left: auto;
+	nav ul {
+		margin-left: -90px;
+		flex-direction: column;
 	}
 	header div a {
 		display: flex;
 		align-items: center;
-
+	}
+	header .header-left .links a span {
+		position: relative;
+		bottom: 0px;
 	}
 }
 
@@ -208,13 +208,16 @@ footer p {
 	header .header-left {
 		margin-right: 0;
 	}
+	header .header-left .links a span {
+		position: relative;
+		bottom: 0px;
+	}
 	header .header-right {
 		margin-bottom: 40px;
 	}
 	header .header-right img {
 		width: 250px;
 	}
-
 	.images .image-card .image-left img {
 		width: 100%;
 	}
