@@ -59,6 +59,16 @@ nav ul li a span {
 	color: dodgerblue;
 }
 
+nav ul li span {
+	position: absolute;
+	top: -4px;
+	right: -28px;
+}
+
+#dark-light-mode:hover {
+	color: grey;
+}
+
 header {
 	margin-top: 60px;
 	display: flex;
@@ -165,6 +175,12 @@ footer p {
 @media all and (max-width: 1120px) {
 	.images .image-card {
 		flex-wrap: wrap;
+	}
+	#dark-light-mode {
+		position: absolute;
+		right: 5%;
+		padding-top: 3.5%;
+		top: 0;
 	}
 	nav {
 		flex-direction: column;
