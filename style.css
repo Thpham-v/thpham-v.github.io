@@ -112,8 +112,7 @@ header .header-left h1 {
 }
 
 header .header-left .links {
-	display: flex;
-  	align-items: center;
+	justify-content: space-between;
 	margin-top: 40px;
 }
 
@@ -141,9 +140,8 @@ header .header-left .links a:hover:before {
 }
 
 header .header-left .links a span {
-	position: absolute;
-	bottom: -3px;
-	margin-left: 2px;
+	position: relative;
+	bottom: -7px;
 	background-image: linear-gradient(to top, rgb(30, 109, 255) 0%, dodgerblue 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -294,19 +292,13 @@ footer p {
 	header {
 		flex-direction: column-reverse;
 	}
-	header div a {
-		display: flex;
-		align-items: center;
-	}
 	header .header-left {
 		margin-right: 0;
 	}
-	header .header-left .links {
-		position: relative;
-	}
 	header .header-left .links a span {
 		position: relative;
-		bottom: 0px;
+		margin-left: 3px;
+		bottom: -1px;
 	}
 	header .header-right {
 		margin-bottom: 40px;
