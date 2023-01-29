@@ -3,6 +3,7 @@
 :root {
 	--background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
 	--text-color: black;
+	--effet-dark-mode: black;
 	--hauteur-menu: 60px;
 }
 
@@ -52,11 +53,28 @@ nav ul li a {
 	color: inherit;
 }
 
+nav ul li a:before {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	background-color: var(--text-color);
+	transition: all 0.3s ease-in-out;
+  }
+  
+nav ul li a:hover:before {
+	width: 100%;
+}
+
 nav ul li a span {
 	position: absolute;
 	top: -3px;
 	right: -28px;
-	color: dodgerblue;
+	background-image: linear-gradient(to top, rgb(30, 109, 255) 0%, dodgerblue 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 nav ul li span {
@@ -66,7 +84,7 @@ nav ul li span {
 }
 
 #dark-light-mode:hover {
-	color: grey;
+    text-shadow: 0 0 5px var(--effet-dark-mode);
 }
 
 header {
@@ -94,8 +112,9 @@ header .header-left h1 {
 }
 
 header .header-left .links {
+	display: flex;
+  	align-items: center;
 	margin-top: 40px;
-	justify-content: space-between;
 }
 
 header .header-left .links a {
@@ -104,13 +123,30 @@ header .header-left .links a {
 	position: relative;
 	margin-right: 40px;
 	font-weight: bold;
-	cursor: pointer;
+}
+
+header .header-left .links a:before {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	background-color: var(--text-color);
+	transition: all 0.3s ease-in-out;
+}
+  
+header .header-left .links a:hover:before {
+	width: 100%;
 }
 
 header .header-left .links a span {
-	position: relative;
-	bottom: -6px;
-	color: dodgerblue;
+	position: absolute;
+	bottom: -3px;
+	margin-left: 2px;
+	background-image: linear-gradient(to top, rgb(30, 109, 255) 0%, dodgerblue 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 header .header-right {
@@ -123,13 +159,23 @@ header .header-right img {
 }
 
 .about {
-	margin-top: 150px;
+	margin-top: 100px;
 }
 
 .about p {
 	font-size: 20px;
 	line-height: 30px;
 	font-weight: 300;
+}
+
+.about h1 {
+	position: relative;
+  	left: 33%;
+  	transform: translateX(-50%);
+  	border-bottom: 1px solid black;
+  	width: 60%;
+  	padding: 20px;
+  	margin: 0 auto;
 }
 
 .images {
@@ -147,21 +193,46 @@ header .header-right img {
 }
 
 .images .image-card .image-left img {
-	height: 250px;
-	width: 330px;
+	height: 260px;
+	width: 230px;
+}
+
+#image-calculatrice {
+	margin-left: 25px;
+	margin-right: 5px;
+	height: 230px;
+	width: 200px;
 }
 
 .images .image-card .image-right a {
+	position: relative;
 	text-decoration: none;
-	cursor: pointer;
 	color: inherit;
 }
 
-.images .image-card .image-right a h1 span {
+.images .image-card .image-right a:before {
+	content: "";
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	background-color: var(--text-color);
+	transition: all 0.3s ease-in-out;
+}
+
+.images .image-card .image-right a:hover:before {
+	width: 100%;
+}
+
+.images .image-card .image-right h1 a span {
 	position: absolute;
 	margin-left: 5px;
-	margin-top: 3px;
-	color: dodgerblue;
+	margin-top: 4px;
+	transform: scale(1.2);
+	background-image: linear-gradient(to top, rgb(30, 109, 255) 0%, dodgerblue 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 footer {
@@ -202,7 +273,7 @@ footer p {
 	}
 }
 
-@media all and (max-width: 621px) {
+@media all and (max-width: 860px) {
 	nav {
 		flex-direction: column;
 	}
@@ -210,6 +281,12 @@ footer p {
 		display: flex;
 		align-items: center;	
 	}
+	#dark-light-mode:hover {
+		position: absolute;
+		right: 5%;
+		padding-top: 3.5%;
+		top: 0;
+    }
 	nav ul li a span {
 		display: flex;
 		align-items: center;
@@ -224,6 +301,9 @@ footer p {
 	header .header-left {
 		margin-right: 0;
 	}
+	header .header-left .links {
+		position: relative;
+	}
 	header .header-left .links a span {
 		position: relative;
 		bottom: 0px;
@@ -235,6 +315,13 @@ footer p {
 		width: 250px;
 	}
 	.images .image-card .image-left img {
+		position: relative;
+		padding-left: 10px;
 		width: 100%;
+	}
+	#image-calculatrice {
+		position: relative;
+		padding-left: 30px;
+		margin: 0;
 	}
 }
