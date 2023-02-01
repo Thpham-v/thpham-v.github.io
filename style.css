@@ -77,12 +77,6 @@ nav ul li a span {
 	-webkit-text-fill-color: transparent;
 }
 
-nav ul li span {
-	position: absolute;
-	top: -4px;
-	right: -28px;
-}
-
 #dark-light-mode:hover {
     text-shadow: 0 0 5px var(--effet-dark-mode);
 }
@@ -140,8 +134,9 @@ header .header-left .links a:hover:before {
 }
 
 header .header-left .links a span {
-	position: relative;
-	bottom: -7px;
+	position: absolute;
+	top: -2px;
+	right: -28px;
 	background-image: linear-gradient(to top, rgb(30, 109, 255) 0%, dodgerblue 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -295,10 +290,12 @@ footer p {
 	header .header-left {
 		margin-right: 0;
 	}
-	header .header-left .links a span {
-		position: relative;
-		margin-left: 3px;
-		bottom: -1px;
+	header .header-left .links a:hover:before {
+		width: 0%;
+	}
+	header .header-left .links a {
+		display: flex;
+		align-items: center;
 	}
 	header .header-right {
 		margin-bottom: 40px;
